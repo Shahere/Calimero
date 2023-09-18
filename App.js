@@ -1,14 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 import Menu from './src/Menu';
+import style from './styles/StyleApp.js'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Menu></Menu>
-    </View>
+    <SafeAreaView>
+      <View>
+        <StatusBar></StatusBar>
+        <View style={style.header}>
+
+        </View>
+        <View style={style.content}>
+          <Menu></Menu>
+        </View>
+      </View>
+    </SafeAreaView>
   );
 }
 
