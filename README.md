@@ -1,1 +1,1 @@
-ANDROID_HOME=/home/savinien/Android/Sdk npm run android
+npm run android
