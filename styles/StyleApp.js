@@ -7,20 +7,20 @@ import {
 
 
 export default style = StyleSheet.create({
-   header: {
-    backgroundColor: 'red',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '20%',
+   navbar: {
+      backgroundColor: 'yellow',
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      width: '100%',
+      height: '10%'
    },
    content: {
-    backgroundColor: 'yellow',
-    position: 'absolute',
-    top: '20%',
-    left: 0,
-    width: '100%',
-    height: '80%'
-   } 
+      backgroundColor: 'transparent',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%'
+   }
 });

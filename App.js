@@ -5,18 +5,20 @@ import Menu from './src/Menu';
 import style from './styles/StyleApp.js'
 
 export default function App() {
-  return (
-    <SafeAreaView>
-      <View>
-        <StatusBar></StatusBar>
-        <View style={style.header}>
 
-        </View>
-        <View style={style.content}>
-          <Menu></Menu>
-        </View>
+  function mainContent() {
+    return <Menu></Menu>
+  }
+
+  return (
+    <View style={style.content}>
+      <View>
+        {mainContent()}
       </View>
-    </SafeAreaView>
+      <View style={style.navbar}>
+        
+      </View>
+    </View>
   );
 }
 
