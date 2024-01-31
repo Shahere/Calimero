@@ -13,7 +13,10 @@ export default style = StyleSheet.create({
       bottom: 0,
       left: 0,
       width: '100%',
-      height: '10%'
+      height: '10%',
+      display: 'flex',
+      justifyContent: 'space-between',
+      flexDirection: 'row'
    },
    content: {
       backgroundColor: 'transparent',
